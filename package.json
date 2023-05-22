@@ -1,0 +1,30 @@
+{
+  "name": "22.1-typescript",
+  "version": "1.0.0",
+  "description": "Node session 11 - 22.1",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "tsc src/index.ts --outDir dist",
+    "transpile2": "tsc src/interfaces-and-classes.ts --outDir dist",
+    "start": "node dist/index.js",
+    "start2": "node dist/interfaces-and-classes.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dfernandezcode/22.1-Typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ],
+  "author": "Daniel Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dfernandezcode/22.1-Typescript/issues"
+  },
+  "homepage": "https://github.com/Dfernandezcode/22.1-Typescript#readme",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}

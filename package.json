@@ -8,9 +8,11 @@
     "transpile-index": "tsc src/index.ts --outDir dist",
     "transpile-interfaces": "tsc src/interfaces-and-classes.ts --outDir dist",
     "transpile-cuentas": "tsc src/cuentas.ts --outDir dist",
-    "start": "node dist/index.js",
-    "start2": "node dist/interfaces-and-classes.js",
-    "start3": "node dist/cuentas.js",
+    "transpile-casas": "tsc src/casas.ts --outDir dist",
+    "start-index": "node dist/index.js",
+    "start-interfaces": "node dist/interfaces-and-classes.js",
+    "start-cuentas": "node dist/cuentas.js",
+    "start-casas": "node dist/casas.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

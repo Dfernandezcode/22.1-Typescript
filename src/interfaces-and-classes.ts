@@ -1,7 +1,5 @@
 // Declare interface first.
 
-import { NumberLiteralType } from "typescript";
-
 interface Address {
     street: string;
     number: number;
@@ -77,3 +75,28 @@ const fish = new Animal("fish", 0, "the Aquarium")
 // run function with relevant constant. const + function.
 dog.getDescription();
 fish.getDescription();
+
+// Clases que cumplen interfaces
+interface Automobile {
+    wheels: number;
+    brand: string;
+    model: string;
+  }
+
+class Car implements Automobile {
+    public wheels: number;
+    public brand: string;
+    public model: string;
+  
+    // 4 is default value.
+    constructor(brand: string, model: string, wheels: number = 4) {
+      this.model = model;
+      this.brand = brand;
+      this.wheels = wheels;
+    }
+  }
+  
+  const coche = new Car("Lexus", "CT200");
+  const limusina = new Car("Mayback", "3000", 6);
+  console.log("El lexus tiene estas ruedas: " + coche.wheels);
+  console.log("La limo tiene estas ruedas: " + limusina.wheels);

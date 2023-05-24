@@ -62,3 +62,4 @@ const spanishCities: Array<string> = ["Madrid", "Valencia", "Barcelona"]
 //EXAMPLE: tsc notes.ts => converts notes.ts to a notes.js file.
 
 // Boolean
+

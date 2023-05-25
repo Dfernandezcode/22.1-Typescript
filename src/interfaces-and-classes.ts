@@ -22,17 +22,21 @@ const myAddress: Address = {
 }
 
 // You can use another interface within another interface.
-interface Person {
+interface Individual {
     name: string;
     phone: number;
-    address: Address;
+    address: {
+        street: string;
+        city: string;
+        number: number;
+    };
 }
 
 
 // remmber to define the interface.
 // order of variables doesn't matter!
 
-const me: Person = {
+const me: Individual = {
     name: "Dani",
     phone: 62414141,
     address: {
